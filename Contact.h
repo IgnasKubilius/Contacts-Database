@@ -38,7 +38,7 @@ private:
     std::string emailInput;
 };
 //*******************************************JURIDICAL_CLASS*****************************************************
-class Juridical 
+class Juridical : public Contact //Logical mistake
 {
 public:
     Juridical (const std::string& setConstructName, const std::string& setConstructSurname, const std::string& setConstructPhoneNumber,
@@ -49,7 +49,7 @@ public:
     std::string getJuridical() const;
     void setType();
 private:
-    Contact contactData;
+    Contact contactData; //Logical mistake
     std::string juridicalInput;
 
 };
