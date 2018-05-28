@@ -38,7 +38,7 @@ private:
     std::string emailInput;
 };
 //*******************************************JURIDICAL_CLASS*****************************************************
-class Juridical : public Contact
+class Juridical 
 {
 public:
     Juridical (const std::string& setConstructName, const std::string& setConstructSurname, const std::string& setConstructPhoneNumber,
@@ -54,7 +54,7 @@ private:
 
 };
 //*******************************************INDIVIDUAL_CLASS*****************************************************
-class Individual : public Contact
+class Individual 
 {
 public:
     Individual (const std::string& setConstructName, const std::string& setConstructSurname, const std::string& setConstructPhoneNumber,
